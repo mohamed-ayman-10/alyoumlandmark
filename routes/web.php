@@ -17,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('local', function () {
-    session(['local'=>request('local')]);
+    session(['local' => request('local')]);
     return redirect()->back();
 });

@@ -1,7 +1,7 @@
 {{-- Bootstrap --}}
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 {{-- Swiper --}}
-<script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
+<script src="{{ asset('assets/js/swiper.js') }}"></script>
 
 <script>
     var swiper = new Swiper(".mySwiper", {

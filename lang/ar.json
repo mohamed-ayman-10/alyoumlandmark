@@ -1,3 +1,24 @@
 {
-    "Dashboard" : "لوحة التحكم"
+    "Dashboard": "لوحة التحكم",
+    "Products": "المنتجات",
+    "Title": "العنوان",
+    "Description": "الوصف",
+    "Image": "الصور",
+    "Price": "السعر",
+    "Actions": "العمليات",
+    "Back": "الرجوع",
+    "Create product": "أضافة منتج",
+    "Title En": "العنوان باللغه الانجليزية",
+    "Title Ar": "العنوان باللغه العربية",
+    "Submit": "حفظ",
+    "Description En": "الوصف باللغه الانجليزية",
+    "Description Ar": "الوصف باللغه العربية",
+    "Choose image": "اختيار صوره",
+    "The Title In Arabic is required": "برجاء ادخال الاسم باللغه العربية",
+    "The Title In English is required": "برجاء ادخال الاسم باللغه الانجليزية ",
+    "The Description In Arabic is required": "برجاء ادخال الوصف باللغه العربية ",
+    "The Description In English is required": "برجاء ادخال الوصف باللغه الانجليزية",
+    "The image is required": "برجاء ادخال الصوره",
+    "The image is required type: jpeg,png,jpg,gif": "jpeg,png,jpg,gif :برجاء ادخال صوره بامتداد",
+    "The price is required": "برجاء ادخال السعر"
 }

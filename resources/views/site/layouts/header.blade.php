@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     {{-- Swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css">
+    {{-- main style --}}
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <title>Alyoum Land Mark</title>
 </head>
 

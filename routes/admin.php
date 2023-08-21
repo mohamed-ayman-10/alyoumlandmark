@@ -14,8 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index')->name('index');
-Route::get('/product', 'ProductController@index')->name('product');
-Route::get('product/create', 'ProductController@create')->name('product.create');
-Route::post('product/store', 'ProductController@store')->name('product.store');
-Route::get('product/show/{id}', 'ProductController@show')->name('product.show');
+// Login
+Route::get('login', 'LoginController@login')->name('login')->middleware('guest');
+Route::post('postLogin', 'LoginController@postLogin')->name('postLogin')->middleware('guest');
+
+Route::middleware('auth')->group(function () {
+    // Dashboard
+    Route::get('/', 'HomeController@index')->name('index');
+    Route::get('/logout', 'HomeController@logout')->name('logout');
+    // Product
+    Route::get('/product', 'ProductController@index')->name('product');
+    Route::get('product/create', 'ProductController@create')->name('product.create');
+    Route::post('product/store', 'ProductController@store')->name('product.store');
+    Route::get('product/show/{id}', 'ProductController@show')->name('product.show');
+    Route::get('product/edit/{id}', 'ProductController@edit')->name('product.edit');
+    Route::post('product/update/{id}', 'ProductController@update')->name('product.update');
+    Route::get('product/destroy/{id}', 'ProductController@destroy')->name('product.destroy');
+
+    // Brand
+    Route::resource('brand', 'BrandController');
+});

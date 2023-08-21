@@ -14,12 +14,12 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view('admin.page.product.index', compact('products'));
+        return view('admin.pages.product.index', compact('products'));
     }
 
     public function create()
     {
-        return view('admin.page.product.create');
+        return view('admin.pages.product.create');
     }
 
     public function store(ProductRequest $request)
@@ -28,7 +28,7 @@ class ProductController extends Controller
             $data = $request->except('_token', 'image');
             $data['image'] = FileUpload::File('images/products', $request->image);
             Product::create($data);
-            return redirect()->route('admin.product')->with('success', __('Successfully Created Products'));
+            return redirect()->route('admin.product')->with('success', __('Create Successfully'));
         } catch (\Exception $ex) {
             return redirect()->back()->withErrors(['error' => $ex->getMessage()]);
         }
@@ -37,6 +37,39 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = Product::findOrFail($id);
-        return view('admin.page.product.show', compact('product'));
+        return view('admin.pages.product.show', compact('product'));
+    }
+
+    public function edit($id)
+    {
+        $product = Product::query()->findOrFail($id);
+        return view('admin.pages.product.edit', compact('product'));
+    }
+
+    public function update(ProductRequest $request, $id)
+    {
+        try {
+
+            $product = Product::query()->findOrFail($id);
+
+            $data = $request->except('_token', 'image');
+            if ($request->hasFile('image')) {
+                FileUpload::Delete($product->image);
+                $data['image'] = FileUpload::File('images/products', $request->image);
+            }
+
+            $product->update($data);
+            return redirect()->route('admin.product')->with('success', __('Update Successfully'));
+        } catch (\Exception $e) {
+            return back()->withErrors(['error' => $e->getMessage()]);
+        }
+    }
+
+    public function destroy($id)
+    {
+        $product = Product::query()->findOrFail($id);
+        FileUpload::Delete($product->image);
+        $product->delete();
+        return redirect()->back()->with('success', __('Delete Successfully'));
     }
 }

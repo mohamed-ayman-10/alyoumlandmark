@@ -11,4 +11,10 @@ class HomeController extends Controller
     {
         return view('admin.index');
     }
+
+    public function logout()
+    {
+        auth()->logout();
+        return redirect()->route('admin.login');
+    }
 }

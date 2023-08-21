@@ -18,7 +18,8 @@
     <div class="js-sidebar-scroll">
         <!-- Side Navigation -->
         <div class="content-side">
-            <ul class="nav-main">
+            <ul dir="{{ app()->getLocale() == 'ar' ? '' : 'rtl' }}"
+                class="nav-main {{ app()->getLocale() == 'ar' ? 'text-right' : 'p-0' }}">
                 <li class="nav-main-item">
                     <a class="nav-main-link active" href="{{ route('admin.index') }}">
                         <i class="nav-main-link-icon si si-speedometer"></i>
@@ -28,19 +29,19 @@
 
                 <li class="nav-main-item">
                     <a class="nav-main-link active" href="{{ route('admin.product') }}">
-                        <i class="nav-main-link-icon si si-speedometer"></i>
+                        <i class="nav-main-link-icon fa fa-box-open"></i>
                         <span class="nav-main-link-name">@lang('Products')</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link active" href="{{ route('admin.product') }}">
-                        <i class="nav-main-link-icon si si-speedometer"></i>
+                    <a class="nav-main-link active" href="{{ route('admin.brand.index') }}">
+                        <i class="nav-main-link-icon fa fa-landmark"></i>
                         <span class="nav-main-link-name">@lang('Brands')</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
                     <a class="nav-main-link active" href="{{ route('admin.product') }}">
-                        <i class="nav-main-link-icon si si-speedometer"></i>
+                        <i class="nav-main-link-icon si si-settings"></i>
                         <span class="nav-main-link-name">@lang('Setting')</span>
                     </a>
                 </li>

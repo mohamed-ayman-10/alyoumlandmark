@@ -10,16 +10,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item mx-2">
-                    <a class="nav-link" aria-current="page" href="#">Our Menu</a>
+                    <a class="nav-link" aria-current="page" href="{{ route('menu') }}">Our Menu</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" aria-current="page" href="#">Our Mission</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
+                    <a class="nav-link" aria-current="page" href="{{ route('about') }}">ABOUT US</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" aria-current="page" href="#">CONTACT US</a>
+                    <a class="nav-link" aria-current="page" href="{{ route('contact') }}">CONTACT US</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">

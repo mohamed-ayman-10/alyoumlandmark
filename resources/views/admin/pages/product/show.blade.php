@@ -2,7 +2,7 @@
 @section('content')
     <div class="row">
         <div class="col-lg-12 col-md-12">
-            <div class="card">
+            <div dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}" class="card  {{ app()->getLocale() == 'ar' ? 'text-right' : '' }}">
 
                 <div class="card-header">
                     <h4 class="m-0">@lang('View product:') {{ $product->title() }}</h4>

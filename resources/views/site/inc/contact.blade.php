@@ -4,13 +4,13 @@
     </div>
     <div class="container text-center">
         <h2>Address</h2>
-        <p>Ist Zone, 7th District, Block 66, 301, C, Nasr City, 11727, Egypt</p>
+        <p>121 Administrative Control Buildings Hadayek El Kobba - Cairo</p>
         <div class="contact-line bg-light mb-4"></div>
         <h2>Phone</h2>
-        <p>Sales/Enquiry :01001840354</p>
+        <p>02-24511803, 01122022033</p>
         <div class="contact-line bg-light mb-4"></div>
         <h2>Email</h2>
-        <p>Sales : fady@seleem.net</p>
+        <p>info@alyomlandmark.com</p>
         <div class="contact-line bg-light mb-4"></div>
         <h2>About</h2>
         <p>Terms of Service</p>

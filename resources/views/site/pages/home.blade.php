@@ -5,11 +5,8 @@
     {{-- <img class="banner-img" src="{{ asset('images/banner.png') }}" alt=""> --}}
     <div class="container">
         <div class="content px-5 text-light">
-            <h2 class="mb-4">Who We Are?</h2>
-            <p>PVVRS Australia has a wide range and network of agents and suppliers globally, who look up to us and
-                take the advantage we offer them by trading with us. VVRS Australia exports and imports a wide range
-                of eatables. It also has a strong focus on international commodities such as wheat, sugar and
-                barley.</p>
+            <h2 class="mb-4">@lang('Who We Are?')</h2>
+            <p>@lang('Alyoum Land Mark company is an Egyptian company specialized in production , packaging , trading and eporting of frozen Vegetables, Fruits and French fries potatoes. Alyoum Land Mark company mission is to seek about qualified material. Our aim is to introduce safe and highly qualified final product with distinguished delicious taste. We consider our consumer as a main member of our Family so we keen carefully to taste him a very pleasant product.')</p>
         </div>
     </div>
 </section>

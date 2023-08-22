@@ -6,7 +6,7 @@
 <div class="contact-us">
     <div class="container">
         <div class="header">
-            <h4 class="title">CONTACT US</h4>
+            <h4 class="title">@lang('CONTACT US')</h4>
         </div>
         <section class="sec4">
             <div class="www">
@@ -29,7 +29,7 @@
                             placeholder="Address" aria-describedby="helpId">
                     </div>
                     <div class="qw">
-                        <button type="submit" class="btns">submit</button>
+                        <button type="submit" class="btns">@lang('Submit')</button>
                     </div>
                 </form>
             </div>

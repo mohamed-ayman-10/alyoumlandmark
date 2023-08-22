@@ -451,6 +451,11 @@ ol,
     margin-bottom: 0px;
 }
 
+ol .pra a {
+    text-decoration: none !important;
+    color: white;
+}
+
 .menu .container {
     position: relative;
     z-index: 2;
@@ -556,5 +561,11 @@ ol,
     border-radius: 1000px;
     background: #e6ff55;
     color: #00473c !important;
+}
+
+.btns:hover {
+    background: #00473c !important;
+    color: #e6ff55 !important;
+    transition: 0.2s;
 }
 /* End Contact Us */

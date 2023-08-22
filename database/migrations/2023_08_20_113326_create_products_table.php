@@ -17,8 +17,9 @@ return new class extends Migration
             $table->text('title_en');
             $table->text('description_ar');
             $table->text('description_en');
+            $table->text('product_details_ar');
+            $table->text('product_details_en');
             $table->text('image');
-            $table->float('price');
             $table->timestamps();
         });
     }

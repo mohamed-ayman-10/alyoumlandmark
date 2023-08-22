@@ -1,26 +1,26 @@
 <section class="contact py-5 bg-green-color">
     <div class="main-title pb-5 text-center">
-        <h3>Contact Information</h3>
+        <h3>@lang('Contact Information')</h3>
     </div>
     <div class="container text-center">
-        <h2>Address</h2>
-        <p>121 Administrative Control Buildings Hadayek El Kobba - Cairo</p>
+        <h2>@lang('Address')</h2>
+        <p>@lang('121 Administrative Control Buildings Hadayek El Kobba - Cairo')</p>
         <div class="contact-line bg-light mb-4"></div>
-        <h2>Phone</h2>
+        <h2>@lang('Phone')</h2>
         <p>02-24511803, 01122022033</p>
         <div class="contact-line bg-light mb-4"></div>
-        <h2>Email</h2>
+        <h2>@lang('Email')</h2>
         <p>info@alyomlandmark.com</p>
         <div class="contact-line bg-light mb-4"></div>
-        <h2>About</h2>
-        <p>Terms of Service</p>
-        <p>Refund Policy</p>
-        <p>Privacy Policy</p>
+        <h2>@lang('About')</h2>
+        <p>@lang('Terms of Service')</p>
+        <p>@lang('Refund Policy')</p>
+        <p>@lang('Privacy Policy')</p>
         <div class="contact-line bg-light mb-4"></div>
-        <h2>BE THE FIRST TO KNOW</h2>
-        <p>Get all the latest information on Events, Sales and Offers, Sign up for newsletter today.</p>
+        <h2>@lang('BE THE FIRST TO KNOW')</h2>
+        <p>@lang('Get all the latest information on Events, Sales and Offers, Sign up for newsletter today.')</p>
         <div class="contact-line bg-light mb-4"></div>
-        <h2 class="pb-3">Subscribe</h2>
+        <h2 class="pb-3">@lang('Subscribe')</h2>
         <form action="#" method="post">
             <div class="input-group mb-3">
                 <input type="text" class="form-control bg-card-color p-4 rounded-start-pill"

@@ -4,9 +4,9 @@
 <section class="banner py-5 position-relative" style="background-image: url({{ asset('images/banner.png') }})">
     {{-- <img class="banner-img" src="{{ asset('images/banner.png') }}" alt=""> --}}
     <div class="container">
-        <div class="content px-5 text-light">
-            <h2 class="mb-4">@lang('Who We Are?')</h2>
-            <p>@lang('Alyoum Land Mark company is an Egyptian company specialized in production , packaging , trading and eporting of frozen Vegetables, Fruits and French fries potatoes. Alyoum Land Mark company mission is to seek about qualified material. Our aim is to introduce safe and highly qualified final product with distinguished delicious taste. We consider our consumer as a main member of our Family so we keen carefully to taste him a very pleasant product.')</p>
+        <div class="content px-5 text-light" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+            <h2 class="mb-4 ">@lang('Who We Are?')</h2>
+            <p class="">@lang('Alyoum Land Mark company is an Egyptian company specialized in production , packaging , trading and eporting of frozen Vegetables, Fruits and French fries potatoes. Alyoum Land Mark company mission is to seek about qualified material. Our aim is to introduce safe and highly qualified final product with distinguished delicious taste. We consider our consumer as a main member of our Family so we keen carefully to taste him a very pleasant product.')</p>
         </div>
     </div>
 </section>
@@ -36,20 +36,26 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper pb-5">
                 @foreach ($products as $product)
-                    <div class="swiper-slide rounded">
-                        <div class="card">
-                            <img src="{{ asset($product->image) }}" class="card-img-top bg-card-color" alt="">
-                            <div class="card-body">
-                                <h3
-                                    class="card-title {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }} text-truncate">
-                                    {{ $product->title() }}</h3>
-                                <p class="card-text {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }}">
-                                    {{ $product->description() }}</p>
-                                <a href="#"
-                                    class="btn p-0 rounded {{ app()->getLocale() == 'ar' ? 'float-end' : 'float-start' }}">@lang('Order now →')</a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#show" data-id="{{ $product->id }}"
+                        data-title="{{ $product->title() }}" data-description="{{ $product->description() }}"
+                        data-details="{{ $product->product_details() }}" data-img="{{ $product->image }}">
+                        <div class="swiper-slide rounded">
+                            <div class="card">
+                                <img src="{{ asset($product->image) }}" class="card-img-top bg-card-color"
+                                    alt="">
+                                <div class="card-body">
+                                    <h3
+                                        class="card-title {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }} text-truncate">
+                                        {{ $product->title() }}</h3>
+                                    <p class="card-text {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }}">
+                                        {{ $product->description() }}</p>
+                                    <a href="#"
+                                        class="btn p-0 rounded {{ app()->getLocale() == 'ar' ? 'float-end' : 'float-start' }}">@lang('Order now →')</a>
+                                </div>
                             </div>
+
                         </div>
-                    </div>
+                    </a>
                 @endforeach
             </div>
             <div class="swiper-pagination"></div>
@@ -60,9 +66,10 @@
 {{-- Start Latest --}}
 <section class="latest py-5">
     <div class="container">
-        <div class="head d-flex align-items-center justify-content-between pb-5">
-            <h3 class="left">The Latest</h3>
-            <a href="#" class="btn p-0 right">Read more →</a>
+        <div class="head d-flex align-items-center justify-content-between pb-5"
+            style="flex-direction:{{ app()->getLocale() == 'ar' ? 'row-reverse' : 'row' }}">
+            <h3 class="left">@lang('The Latest')</h3>
+            <a href="#" class="btn p-0 right">@lang('Read more →')</a>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-4 mb-4">
@@ -71,7 +78,7 @@
                         <img src="{{ asset('images/latest/latest-1.png') }}" alt="" class="w-100 h-100">
                     </div>
                     <div class="body pe-2">
-                        <h5>Good Morning America</h5>
+                        <h5>@lang('Good Morning America')</h5>
                         <p class="m-0">Naomi Osaka joins sweetgreen as youngest investor <br> Discover what our
                             collab means for the future of fast food…</p>
                         <a href="#" class="btn p-0">Read more →</a>
@@ -108,6 +115,8 @@
     </div>
 </section>
 {{-- End Latest --}}
+
+@include('modal.modalShow')
 
 {{-- Start Contact --}}
 @include('site.inc.contact')

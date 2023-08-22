@@ -19,7 +19,8 @@ class ProductSeeder extends Seeder
                 'title_en' => 'Frozen Potatoes (Allumettes)',
                 'description_ar' => 'دجاج مشوي ، طماطم ، رقائق بارميزان ، جبنة بارميزان مبشورة ، كالي مبشور ، رومين مقطع ، عصير ليمون ، صلصة سيزر',
                 'description_en' => 'Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing',
-                'price' => '100',
+                'product_details_ar' => '5cm',
+                'product_details_en' => '5cm',
                 'image' => 'images/products/product-1.png'
             ],
             [
@@ -27,7 +28,8 @@ class ProductSeeder extends Seeder
                 'title_en' => 'Frozen Strawberry',
                 'description_ar' => 'دجاج مشوي ، طماطم ، رقائق بارميزان ، جبنة بارميزان مبشورة ، كالي مبشور ، رومين مقطع ، عصير ليمون ، صلصة سيزر',
                 'description_en' => 'Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing',
-                'price' => '100',
+                'product_details_ar' => '5cm',
+                'product_details_en' => '5cm',
                 'image' => 'images/products/product-1.png'
             ],
             [
@@ -35,12 +37,13 @@ class ProductSeeder extends Seeder
                 'title_en' => 'Frozen Green Beans',
                 'description_ar' => 'دجاج مشوي ، طماطم ، رقائق بارميزان ، جبنة بارميزان مبشورة ، كالي مبشور ، رومين مقطع ، عصير ليمون ، صلصة سيزر',
                 'description_en' => 'Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing',
-                'price' => '100',
+                'product_details_ar' => '5cm',
+                'product_details_en' => '5cm',
                 'image' => 'images/products/product-1.png'
             ]
         ];
 
-        foreach($products as $product) {
+        foreach ($products as $product) {
             Product::query()->create($product);
         }
     }

@@ -25,7 +25,7 @@
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="" class="form-label">@lang('Title In Arabic')</label>
-                                    <input type="text" name="title_ar" value="{{old('title_ar')}}" id=""
+                                    <input type="text" name="title_ar" value="{{ old('title_ar') }}" id=""
                                         class="form-control @error('title_ar') is-invalid @enderror"
                                         placeholder="{{ __('Title In Arabic') }}" aria-describedby="helpId">
                                     @error('title_ar')
@@ -36,7 +36,7 @@
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="" class="form-label">@lang('Title In English')</label>
-                                    <input type="text" name="title_en" value="{{old('title_en')}}" id=""
+                                    <input type="text" name="title_en" value="{{ old('title_en') }}" id=""
                                         class="form-control @error('title_en') is-invalid @enderror"
                                         placeholder="{{ __('Title In English') }}" aria-describedby="helpId">
                                     @error('title_en')
@@ -47,8 +47,8 @@
                             <div class="col-12">
                                 <div class="mb-3">
                                     <label for="" class="form-label">@lang('Description Ar')</label>
-                                    <textarea class="form-control @error('description_ar') is-invalid @enderror" name="description_ar" id="" rows="5"
-                                        placeholder="{{ __('Description Ar') }}">{{old('description_ar')}}</textarea>
+                                    <textarea class="form-control @error('description_ar') is-invalid @enderror" name="description_ar" id=""
+                                        rows="5" placeholder="{{ __('Description Ar') }}">{{ old('description_ar') }}</textarea>
                                     @error('description_ar')
                                         <div class="text-danger">{{ $message }}</div>
                                     @enderror
@@ -57,8 +57,28 @@
                             <div class="col-12">
                                 <div class="mb-3">
                                     <label for="" class="form-label">@lang('Description En')</label>
-                                    <textarea class="form-control @error('description_en') is-invalid @enderror" name="description_en" id="" rows="5"
-                                        placeholder="{{ __('Description En') }}">{{old('description_en')}}</textarea>
+                                    <textarea class="form-control @error('description_en') is-invalid @enderror" name="description_en" id=""
+                                        rows="5" placeholder="{{ __('Description En') }}">{{ old('description_en') }}</textarea>
+                                    @error('description_en')
+                                        <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">@lang('Product Details Ar')</label>
+                                    <textarea class="form-control @error('product_details') is-invalid @enderror" name="product_details_ar" id=""
+                                        rows="5" placeholder="{{ __('Product Details Ar') }}">{{ old('product_details_ar') }}</textarea>
+                                    @error('description_en')
+                                        <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">@lang('Product Details En')</label>
+                                    <textarea class="form-control @error('product_details_en') is-invalid @enderror" name="product_details_en" id=""
+                                        rows="5" placeholder="{{ __('Product Details En') }}">{{ old('product_details_en') }}</textarea>
                                     @error('description_en')
                                         <div class="text-danger">{{ $message }}</div>
                                     @enderror
@@ -67,23 +87,14 @@
                             <div class="col-12">
                                 <div class="mb-3">
                                     <label for="" class="form-label">@lang('Choose image')</label>
-                                    <input type="file" class="form-control-file  @error('image') is-invalid @enderror" name="image" id="image"
-                                        aria-describedby="fileHelpId">
+                                    <input type="file" class="form-control-file  @error('image') is-invalid @enderror"
+                                        name="image" id="image" aria-describedby="fileHelpId">
                                     @error('image')
                                         <div class="text-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="" class="form-label">@lang('Price')</label>
-                                    <input type="number" name="price" value="{{old('price')}}" id="" class="form-control @error('price') is-invalid @enderror"
-                                        placeholder="{{ __('Price') }}" aria-describedby="helpId">
-                                    @error('price')
-                                        <div class="text-danger">{{ $message }}</div>
-                                    @enderror
-                                </div>
-                            </div>
+
                             <div class="col-12">
                                 <div class="text-center mt-3">
                                     <button type="submit" class="btn btn-md btn-primary">@lang('Submit')</button>

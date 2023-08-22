@@ -5,31 +5,31 @@
 
 <div class="menu">
     <div class="container">
-        <div class="qa">
+        <div class="qa" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
             <div class="menu-content">
                 <div class="header">
-                    <h4 class="menu-title">Our Menu</h4>
+                    <h4 class="menu-title">@lang('Our Menu')</h4>
                 </div>
                 <div class="menu-body">
                     <p class="pra zxc">@lang('alyoum land mark products are:')</p>
                     <div class="menu-text">
                         <ol>
-                            <li class="pra">@lang('Frozen French fries and Frozen Potatoes')</li>
-                            <li class="pra">@lang('Certified, Analyzed Strawberry.')</li>
-                            <li class="pra">@lang('Mango in Slices or Cubes')</li>
-                            <li class="pra">@lang('Egyptian Pomegranate (frozen Seed)')</li>
-                            <li class="pra">@lang('Frozen Mixed Vegetables.')</li>
-                            <li class="pra">@lang('Green Bean')</li>
-                            <li class="pra">@lang('Okra ( All Sizes )')</li>
-                            <li class="pra">@lang('Frozen Spinach')</li>
-                            <li class="pra">@lang('Frozen Mulukhiyah')</li>
-                            <li class="pra"> @lang('Frozen Sugary Pea')</li>
-                            <li class="pra"> @lang('Frozen Dry Pea')</li>
-                            <li class="pra"> @lang('Grilled Frozen eggplant')</li>
-                            <li class="pra"> @lang('Frozen Artichoke ( Pellet and cubes)')</li>
-                            <li class="pra"> @lang('Frozen Broccoli')</li>
-                            <li class="pra"> @lang('Frozen Taro ( Cubes)')</li>
-                            <li class="pra"> @lang('Guava ( slices , Cubes and minced)')</li>
+                            <li class="pra"><a href="">@lang('Frozen French fries and Frozen Potatoes')</a></li>
+                            <li class="pra"><a href="">@lang('Certified, Analyzed Strawberry.') </a></li>
+                            <li class="pra"><a href="">@lang('Mango in Slices or Cubes') </a></li>
+                            <li class="pra"><a href="">@lang('Egyptian Pomegranate (frozen Seed)') </a></li>
+                            <li class="pra"><a href="">@lang('Frozen Mixed Vegetables.') </a></li>
+                            <li class="pra"><a href="">@lang('Green Bean') </a></li>
+                            <li class="pra"><a href="">@lang('Okra ( All Sizes )') </a></li>
+                            <li class="pra"><a href="">@lang('Frozen Spinach') </a></li>
+                            <li class="pra"><a href="">@lang('Frozen Mulukhiyah') </a></li>
+                            <li class="pra"><a href="">@lang('Frozen Sugary Pea') </a></li>
+                            <li class="pra"><a href="">@lang('Frozen Dry Pea') </a></li>
+                            <li class="pra"><a href="">@lang('Grilled Frozen eggplant') </a></li>
+                            <li class="pra"><a href="">@lang('Frozen Artichoke ( Pellet and cubes)') </a></li>
+                            <li class="pra"><a href="">@lang('Frozen Broccoli') </a></li>
+                            <li class="pra"><a href="">@lang('Frozen Taro ( Cubes)') </a></li>
+                            <li class="pra"><a href="">@lang('Guava ( slices , Cubes and minced)') </a></li>
 
                         </ol>
                         <p class="pra">

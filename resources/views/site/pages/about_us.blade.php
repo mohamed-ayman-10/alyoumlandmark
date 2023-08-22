@@ -11,8 +11,8 @@
                 <div class="header">
                     <h4 class="title">@lang('ABOUT US')</h4>
                 </div>
-                <div class="body">
-                    <p>@lang('Alyoum Land Mark company is an Egyptian company specialized in production , packaging , trading and eporting of frozen Vegetables, Fruits and French fries potatoes. Alyoum Land Mark company mission is to seek about qualified material. Our aim is to introduce safe and highly qualified final product with distinguished delicious taste. We consider our consumer as a main member of our Family so we keen carefully to taste him a very pleasant product.')</p>
+                <div class="body {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }}">
+                    <p class="">@lang('Alyoum Land Mark company is an Egyptian company specialized in production , packaging , trading and eporting of frozen Vegetables, Fruits and French fries potatoes. Alyoum Land Mark company mission is to seek about qualified material. Our aim is to introduce safe and highly qualified final product with distinguished delicious taste. We consider our consumer as a main member of our Family so we keen carefully to taste him a very pleasant product.')</p>
                 </div>
             </section>
             <section class="sec2">

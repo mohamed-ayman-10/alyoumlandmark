@@ -27,7 +27,6 @@ class ProductRequest extends FormRequest
             'description_ar' => 'required',
             'description_en' => 'required',
             'image'          => 'required|mimes:jpeg,png,jpg,gif',
-            'price'          => 'required'
         ];
     }
 
@@ -40,7 +39,6 @@ class ProductRequest extends FormRequest
             'description_en.required' => __('The Description In English is required'),
             'image.required'          => __('The image is required'),
             'image.mimes'             => __('The image is required type: jpeg,png,jpg,gif'),
-            'price.required'          => __('The price is required'),
         ];
     }
 }

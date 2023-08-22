@@ -51,7 +51,6 @@ class ProductController extends Controller
         try {
 
             $product = Product::query()->findOrFail($id);
-
             $data = $request->except('_token', 'image');
             if ($request->hasFile('image')) {
                 FileUpload::Delete($product->image);

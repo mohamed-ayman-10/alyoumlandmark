@@ -27,4 +27,13 @@ class Product extends Model
             return $this->description_ar;
         }
     }
+
+    public function product_details()
+    {
+        if (app()->getLocale() == 'ar') {
+            return $this->product_details_ar;
+        } else {
+            return $this->product_details_en;
+        }
+    }
 }

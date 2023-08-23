@@ -36,8 +36,9 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper pb-5">
                 @foreach ($products as $product)
-                    <a href="" data-bs-toggle="modal" data-bs-target="#show" data-id="{{ $product->id }}"
-                        data-title="{{ $product->title() }}" data-description="{{ $product->description() }}"
+                    <a href="" data-bs-toggle="modal" data-bs-target="#show"
+                        style="color: black;text-decoration: none" data-title="{{ $product->title() }}"
+                        data-description="{{ $product->description() }}"
                         data-details="{{ $product->product_details() }}" data-img="{{ $product->image }}">
                         <div class="swiper-slide rounded">
                             <div class="card">

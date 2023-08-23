@@ -2,7 +2,22 @@
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 {{-- Swiper --}}
 <script src="{{ asset('assets/js/swiper.js') }}"></script>
+<script src="{{ asset('assets/js/jquery-3.7.0.js') }}"></script>
+<script>
+    $('#show').on('show.bs.modal', function(e) {
+        var button = $(e.relatedTarget);
+        var title = button.data('title');
+        var description = button.data('description');
+        var product_details = button.data('details');
+        var img = button.data('img');
+        var modal = $(this);
 
+        modal.find('.modal-header .modal-title .title').html(title);
+        modal.find('.modal-body #img').attr('src', img);
+        modal.find('.modal-body .description').html(description);
+        modal.find('.modal-body .product-description').html(product_details)
+    });
+</script>
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,

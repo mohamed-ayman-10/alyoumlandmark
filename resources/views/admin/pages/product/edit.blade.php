@@ -96,17 +96,6 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="" class="form-label">@lang('Price')</label>
-                                    <input type="number" name="price" value="{{ old('price', $product->price) }}"
-                                        id="" class="form-control @error('price') is-invalid @enderror"
-                                        placeholder="{{ __('Price') }}" aria-describedby="helpId">
-                                    @error('price')
-                                        <div class="text-danger">{{ $message }}</div>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="col-12">
                                 <div class="text-center mt-3">
                                     <button type="submit" class="btn btn-md btn-primary">@lang('Submit')</button>
                                 </div>

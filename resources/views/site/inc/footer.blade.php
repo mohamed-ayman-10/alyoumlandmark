@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="col-md-6 my-auto">
-                <p>copyright @ 21.Al Rights Reserved.</p>
+                <p> &copy; Alyoumlandmark 2023 (All Rights Reserved) - Powered By Inomtechs</p>
             </div>
         </div>
     </div>

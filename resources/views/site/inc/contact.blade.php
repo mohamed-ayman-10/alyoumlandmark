@@ -12,11 +12,7 @@
         <h2>@lang('Email')</h2>
         <p>info@alyomlandmark.com</p>
         <div class="contact-line bg-light mb-4"></div>
-        <h2>@lang('About')</h2>
-        <p>@lang('Terms of Service')</p>
-        <p>@lang('Refund Policy')</p>
-        <p>@lang('Privacy Policy')</p>
-        <div class="contact-line bg-light mb-4"></div>
+
         <h2>@lang('BE THE FIRST TO KNOW')</h2>
         <p>@lang('Get all the latest information on Events, Sales and Offers, Sign up for newsletter today.')</p>
         <div class="contact-line bg-light mb-4"></div>

@@ -40,6 +40,12 @@
                     </a>
                 </li>
                 <li class="nav-main-item">
+                    <a class="nav-main-link active" href="{{ route('admin.contact-us.order') }}">
+                        <i class="nav-main-link-icon fa fa-landmark"></i>
+                        <span class="nav-main-link-name">@lang('Order')</span>
+                    </a>
+                </li>
+                <li class="nav-main-item">
                     <a class="nav-main-link active" href="{{ route('admin.product') }}">
                         <i class="nav-main-link-icon si si-settings"></i>
                         <span class="nav-main-link-name">@lang('Setting')</span>

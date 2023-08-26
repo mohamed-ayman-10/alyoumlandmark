@@ -18,6 +18,14 @@
         modal.find('.modal-body .product-description').html(product_details)
     });
 </script>
+
+<script>
+    $('.close-alert').on('click', function() {
+        $('.close-alert').parent().remove();
+    });
+</script>
+
+
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,

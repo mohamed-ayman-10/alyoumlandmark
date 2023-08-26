@@ -87,5 +87,11 @@
     "Subscribe": "يشترك",
     "Product Details En": "وصف المنتج باللغه الانجليزية",
     "Product Details Ar": "وصف المنتج باللغه العربية",
-    "Product Details:": "تفاصيل المنتج:"
+    "Product Details:": "تفاصيل المنتج:",
+    "The request has not been sent": "لم بتم ارسال الطلب ",
+    "The request has been sent successfully": "تم ارسال الطلب بنجاح",
+    "The Name Is Required": "الاسم مطلوب",
+    "The Phone Is Required": "الهاتف مطلوب",
+    "The Email Is Required": "البريد الإلكتروني مطلوب",
+    "The Address Is Required": "العنوان مطلوب"
 }

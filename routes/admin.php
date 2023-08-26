@@ -31,6 +31,10 @@ Route::middleware('auth')->group(function () {
     Route::post('product/update/{id}', 'ProductController@update')->name('product.update');
     Route::get('product/destroy/{id}', 'ProductController@destroy')->name('product.destroy');
 
+    Route::get('order', 'ProductController@order')->name('contact-us.order');
+    Route::get('order/{id}', 'ProductController@updatesee')->name('contact-us.updatesee');
+    Route::get('order/delete/{id}', 'ProductController@delete')->name('contact-us.delete');
+
     // Brand
     Route::resource('brand', 'BrandController');
 });

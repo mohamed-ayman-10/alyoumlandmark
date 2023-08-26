@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductRequest;
+use App\Models\Contact;
 use App\Models\Product;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
@@ -70,5 +71,25 @@ class ProductController extends Controller
         FileUpload::Delete($product->image);
         $product->delete();
         return redirect()->back()->with('success', __('Delete Successfully'));
+    }
+
+    public function order()
+    {
+        $orders = Contact::all();
+        return view('admin.pages.orders.index', compact('orders'));
+    }
+    public function updatesee($id)
+    {
+        $order = Contact::findOrFail($id);
+        $order->update([
+            'see' => now()
+        ]);
+        return redirect()->back();
+    }
+
+    public function delete($id)
+    {
+        Contact::findOrFail($id)->delete();
+        return redirect()->back();
     }
 }

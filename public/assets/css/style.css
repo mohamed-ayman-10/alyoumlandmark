@@ -444,6 +444,51 @@ footer p {
     left: 0;
     z-index: 1;
 }
+.menu-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.menu-text a {
+    padding: 12px 24px;
+    flex-shrink: 0;
+    height: 101.396px;
+    width: 100%;
+}
+
+.menu-text a p {
+    border-radius: 40px;
+    border: 3px solid #f4f3e7;
+    background: rgba(149, 140, 123, 0.7);
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-text a p {
+        font-size: 16px;
+    }
+    .menu .container .menu-content .menu-body .pra {
+        line-height: 35px !important;
+    }
+    .products div p {
+        margin-bottom: 20px !important;
+    }
+    .details-header h4 {
+        line-height: 40px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .zas p {
+        display: none;
+    }
+    .zas {
+        border-top: none !important;
+        background-color: #f4f3e7;
+    }
+}
 
 ol,
 .zxc {
@@ -474,7 +519,7 @@ ol .pra a {
     font-style: normal;
     font-weight: 400;
     line-height: 68px; /* 85% */
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .menu .container .menu-content .menu-body .pra {
     color: #f4f3e7;
@@ -569,3 +614,76 @@ ol .pra a {
     transition: 0.2s;
 }
 /* End Contact Us */
+
+/* Start Modal  */
+.product-modal {
+    background: #e8dcc6 !important;
+}
+.product-content {
+    max-width: 1067px;
+    flex-shrink: 0;
+    max-height: 831px;
+    overflow: auto;
+}
+
+.product-content img {
+    max-width: 100%;
+}
+.details {
+    background-color: #f4f3e7;
+    max-height: 900px !important;
+}
+
+.details-header {
+    padding: 50px 0;
+}
+.zas {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    border-top: 1px solid #ddd;
+    height: 100px;
+}
+.name {
+    font-size: 30px !important;
+}
+.details-header h4 {
+    color: #0e150e;
+    font-family: "Segoe UI";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 80% */
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.close {
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: none;
+}
+.close svg {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+.products div p {
+    height: 54px;
+    flex-shrink: 0;
+}
+.details-header p {
+    color: #0e150e;
+    font-family: "Segoe UI";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px; /* 86.538% */
+}
+
+.xa-0 {
+    padding: 0;
+}
+/* End Modal */

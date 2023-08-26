@@ -12,7 +12,7 @@
         var img = button.data('img');
         var modal = $(this);
 
-        modal.find('.modal-header .modal-title .title').html(title);
+        modal.find('.modal-body .title').html(title);
         modal.find('.modal-body #img').attr('src', img);
         modal.find('.modal-body .description').html(description);
         modal.find('.modal-body .product-description').html(product_details)

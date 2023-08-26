@@ -28,6 +28,7 @@ class HomeController extends Controller
 
     public function menu()
     {
-        return view('site.pages.our_menu');
+        $products = Product::all();
+        return view('site.pages.our_menu', compact('products'));
     }
 }

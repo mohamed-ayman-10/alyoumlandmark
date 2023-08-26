@@ -394,12 +394,12 @@ footer p {
 }
 
 .swiper-button-prev {
-    left: -28px !important;
+    left: -40px !important;
     color: white !important;
     font-weight: bolder !important;
 }
 .swiper-button-next {
-    right: 0px !important;
+    left: 99% !important;
     color: white !important;
     font-weight: bolder !important;
 }
@@ -408,7 +408,7 @@ footer p {
     border-bottom: 1px solid WHITE;
 }
 .sec3 {
-    width: 100%;
+    min-width: 100%;
     margin: 50px 0 100px;
 }
 
@@ -416,6 +416,7 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 .images2 {
@@ -488,6 +489,14 @@ footer p {
         border-top: none !important;
         background-color: #f4f3e7;
     }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+    .conf {
+        gap: 20px;
+    }
 }
 
 ol,
@@ -512,7 +521,9 @@ ol .pra a {
 .menu .container .menu-content .header {
     text-align: center;
 }
-
+.body {
+    padding: 20px !important;
+}
 .menu .container .menu-content .header .menu-title {
     color: var(--f-9-f-9-f-9, #fff);
     font-size: 80px;

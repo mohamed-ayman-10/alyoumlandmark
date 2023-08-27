@@ -36,27 +36,24 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper pb-5">
                 @foreach ($products as $product)
-                    <a href="" data-bs-toggle="modal" data-bs-target="#show"
-                        style="color: black;text-decoration: none" data-title="{{ $product->title() }}"
-                        data-description="{{ $product->description() }}"
-                        data-details="{{ $product->product_details() }}" data-img="{{ $product->image }}">
-                        <div class="swiper-slide rounded">
-                            <div class="card">
-                                <img src="{{ asset($product->image) }}" class="card-img-top bg-card-color"
-                                    alt="">
-                                <div class="card-body">
-                                    <h3
-                                        class="card-title {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }} text-truncate">
-                                        {{ $product->title() }}</h3>
-                                    <p class="card-text {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }}">
-                                        {{ $product->description() }}</p>
-                                    <a href="#"
-                                        class="btn p-0 rounded {{ app()->getLocale() == 'ar' ? 'float-end' : 'float-start' }}">@lang('Order now →')</a>
-                                </div>
+                    <div class="swiper-slide rounded">
+                        <div class="card">
+                            <img src="{{ asset($product->image) }}" class="card-img-top bg-card-color" alt="">
+                            <div class="card-body">
+                                <h3
+                                    class="card-title {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }} text-truncate">
+                                    {{ $product->title() }}</h3>
+                                <p class="card-text {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }}">
+                                    {{ $product->description() }}</p>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#show"
+                                    data-title="{{ $product->title() }}"
+                                    data-description="{{ $product->description() }}"
+                                    data-details="{{ $product->product_details() }}" data-img="{{ $product->image }}"
+                                    class="btn p-0 rounded {{ app()->getLocale() == 'ar' ? 'float-end' : 'float-start' }}">@lang('Order now →')</a>
                             </div>
-
                         </div>
-                    </a>
+
+                    </div>
                 @endforeach
             </div>
             <div class="swiper-pagination"></div>

@@ -26,7 +26,6 @@ class ProductRequest extends FormRequest
             'title_en'       => 'required',
             'description_ar' => 'required',
             'description_en' => 'required',
-            'image'          => 'required|mimes:jpeg,png,jpg,gif',
         ];
     }
 
@@ -37,8 +36,6 @@ class ProductRequest extends FormRequest
             'title_en.required'       => __('The Title In English is required'),
             'description_ar.required' => __('The Description In Arabic is required'),
             'description_en.required' => __('The Description In English is required'),
-            'image.required'          => __('The image is required'),
-            'image.mimes'             => __('The image is required type: jpeg,png,jpg,gif'),
         ];
     }
 }

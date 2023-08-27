@@ -167,6 +167,13 @@ nav.navbar {
 /* End Brand */
 
 /* Start Product */
+
+.product .swiper .swiper-slide .card {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+}
+
 .product .swiper .swiper-slide .card img {
     height: 320px;
 }
@@ -185,6 +192,11 @@ nav.navbar {
     font-style: normal;
     font-weight: 400;
     line-height: 22.5px; /* 125% */
+    height: 80px;
+    overflow: auto;
+}
+.product .swiper .swiper-slide .card .card-body p::-webkit-scrollbar {
+    width: 0px;
 }
 
 .product .swiper .swiper-slide .card .card-body a {

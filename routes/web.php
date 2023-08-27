@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Site\HomeController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,21 @@ Route::resource('contact-us', ContactController::class);
 Route::get('local', function () {
     session(['local' => request('local')]);
     return redirect()->back();
+});
+
+Route::get('reset', function () {
+    Artisan::call('config:cache');
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('route:cache');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('optimize:clear');
+    Artisan::call('config:cache');
+    return "Done";
+});
+
+Route::get('migrate', function () {
+    Artisan::call('migrate:fresh --seed');
+    return "Migration Done";
 });

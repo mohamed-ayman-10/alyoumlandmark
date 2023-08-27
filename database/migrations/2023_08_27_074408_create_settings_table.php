@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->string('title', 999);
-            $table->string('title', 999);
+            $table->string('title_ar', 999);
+            $table->string('title_en', 999);
+            $table->text('address_ar');
+            $table->text('address_en');
             $table->text('logo');
             $table->text('favicon');
             $table->timestamps();

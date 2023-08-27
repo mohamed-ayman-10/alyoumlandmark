@@ -14,7 +14,7 @@
 {{-- Start Brands --}}
 <section class="brand bg-white-color py-5">
     <div class="main-title pb-5 text-center">
-        <h3>Other Brands we supply</h3>
+        <h3>@lang('Other Brands we supply')</h3>
     </div>
     <div class="container">
         <div class="items d-flex align-items-center justify-content-center flex-wrap gap-4">
@@ -28,7 +28,7 @@
 {{-- Start Products --}}
 <section class="product py-5 bg-green-color">
     <div class="main-title pb-5 text-center">
-        <h3>Main Products</h3>
+        <h3>@lang('Main Products')</h3>
     </div>
     <div class="container">
 
@@ -40,7 +40,7 @@
                         <div class="card">
                             <img src="{{ asset($product->image) }}" class="card-img-top bg-card-color" alt="">
                             <div class="card-body">
-                                <h3
+                                <h3 dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}"
                                     class="card-title {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }} text-truncate">
                                     {{ $product->title() }}</h3>
                                 <p class="card-text {{ app()->getLocale() == 'ar' ? 'text-end' : 'text-start' }}">
@@ -62,7 +62,7 @@
 </section>
 {{-- End Products --}}
 {{-- Start Latest --}}
-<section class="latest py-5">
+{{-- <section class="latest py-5">
     <div class="container">
         <div class="head d-flex align-items-center justify-content-between pb-5"
             style="flex-direction:{{ app()->getLocale() == 'ar' ? 'row-reverse' : 'row' }}">
@@ -111,7 +111,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 {{-- End Latest --}}
 
 @include('modal.modalShow')

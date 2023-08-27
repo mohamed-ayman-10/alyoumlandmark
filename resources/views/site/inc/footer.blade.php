@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-3 mb-5 mb-md-0">
                 <div class="content text-center">
-                    <h4>Follow us</h4>
+                    <h4>@lang('Follow us')</h4>
                     <ul class="d-flex align-items-center justify-content-center list-unstyled gap-4">
                         <li>
                             <a href="https://wa.me/{{ App\Models\Setting::query()->first()->facebook }}" target="_blank">

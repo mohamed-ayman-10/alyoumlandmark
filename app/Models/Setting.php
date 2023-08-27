@@ -18,4 +18,13 @@ class Setting extends Model
             return $this->address_en;
         }
     }
+
+    public function title()
+    {
+        if (app()->getLocale() == 'ar') {
+            return $this->title_ar;
+        } else {
+            return $this->title_en;
+        }
+    }
 }

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="shortcut icon" href="{{ asset(App\Models\Setting::query()->first()->logo) }}" type="image/x-icon">
+
     {{-- Bootstrap --}}
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     {{-- Fontawesome --}}
@@ -17,7 +19,7 @@
     {{-- main style --}}
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 
-    <title>Alyoum Land Mark</title>
+    <title>{{ asset(App\Models\Setting::query()->first()->title()) }}</title>
 </head>
 
 <body>

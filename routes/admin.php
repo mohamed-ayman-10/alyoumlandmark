@@ -37,4 +37,8 @@ Route::middleware('auth')->group(function () {
 
     // Brand
     Route::resource('brand', 'BrandController');
+
+    // Setting
+    Route::get('setting', 'SettingController@index')->name('setting');
+    Route::post('setting/update', 'SettingController@update')->name('setting.update');
 });

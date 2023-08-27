@@ -30,7 +30,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Sizes available: Frozen strawberries whole, uncalibrated Frozen strawberries 15-25mm Frozen strawberries 25-35mm Strawberries cut or sliced',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-2.png'
             ],
             [
                 'title_ar' => 'المانجة الشرائح و المكعبات ',
@@ -39,7 +39,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Frozen Mango Whole Mango - Sliced Frozen Mango Export Slices Bag weight: 1 kg / 10 bags per carton Carton weight: 10 kg IQF Mango',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-3.jpeg'
             ],
             [
                 'title_ar' => 'الرمان المنفلوطى ( حب) ',
@@ -48,7 +48,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Bag weight: 400 gm, number of bags per carton: 20 bags, carton weight: 8 kg',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-4.jpg'
             ],
             [
                 'title_ar' => 'الخضار المشكل بجميع مكوناته طبقا لمتطلبات العملاء.',
@@ -58,7 +58,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'We choose the finest varieties of fresh peas, carrots and green beans. The Nile Valley applies the methods of processing mixed vegetables so that it corresponds to the beginning of the season when they are fresh and have a high sugar concentration. Storage: a deep freezer or freezer at a temperature of minus 18 degrees Celsius for a period not exceeding 18 months. Re-freezing is not allowed',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-5.png'
             ],
             [
                 'title_ar' => 'فاصوليا خضراء مجمدة',
@@ -67,7 +67,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Frozen green beans for export from Egypt to all parts of the world, high quality that meets all international certificates and standards for export.',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-6.png'
             ],
             [
                 'title_ar' => 'البامية الخضراء المجمدة بجميع درجاتها و احجامها.',
@@ -76,7 +76,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-7.png'
             ],
 
             [
@@ -86,7 +86,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Shelf life: 2 years in storage at -18°C Ingredients: Spinach 100% free of preservatives and artificial colors Flavoring Variety: Camarosa. Harvest season: mid-November - end of May. Storage: Deep Freeze (-18°C) for more than 18 months, no re-freezing is allowed. Origin: Egypt Country of Manufacture: Egypt',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-8.png'
             ],
             [
                 'title_ar' => 'الملوخية',
@@ -95,7 +95,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Bag weight: 400 gm, number of bags per carton: 20 bags, carton weight: 8 kg',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-9.png'
             ],
             [
                 'title_ar' => 'البسلة السكرى',
@@ -104,7 +104,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Sugar pea - Dry pea',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-10.png'
             ],
             [
                 'title_ar' => 'البسلة الدراى',
@@ -113,7 +113,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Sugar pea - Dry pea',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-10.png'
             ],
             [
                 'title_ar' => 'الباذنجان المشوى',
@@ -122,7 +122,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded kale, chopped romaine, lime squeeze, caesar dressing',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-11.png'
             ],
             [
                 'title_ar' => 'الخرشوف المجمد قرص و مكعبات',
@@ -131,7 +131,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Frozen Artichoke Hearts Halves Frozen Artichoke Frozen Artichoke Slices Frozen Artichoke Half Heart Sliced Artichokes In Brine Packed In Barrels Or Cans',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-12.jpeg'
             ],
             [
                 'title_ar' => 'البروكلى',
@@ -140,7 +140,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Bag weight: 400 gm, number of bags per carton: 20 bags, carton weight: 8 kg',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-13.jpg'
             ],
             [
                 'title_ar' => 'الفول الأخضر',
@@ -149,7 +149,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Frozen beans',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-14.jpg'
             ],
             [
                 'title_ar' => 'القلقاس المكعبات المجمد',
@@ -158,7 +158,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Bag weight: 400 gm, number of bags per carton: 20 bags, carton weight: 8 kg',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-15.jpg'
             ],
             [
                 'title_ar' => 'الجوافة الشرائح و المكعبات و المفرومة',
@@ -167,7 +167,7 @@ class ProductSeeder extends Seeder
                 'description_en' => 'Origin: Our farms in Egypt Product: Fresh Guava Variety: Sweet Egyptian Guava Color: Yellow Green Natural Packing: 2.5, 2 kg telescopic carton',
                 'product_details_ar' => '5cm',
                 'product_details_en' => '5cm',
-                'image' => 'images/products/product-1.png'
+                'image' => 'images/products/product-16.jpg'
             ],
         ];
 

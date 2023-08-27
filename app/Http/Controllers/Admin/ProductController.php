@@ -26,6 +26,14 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         try {
+
+            $request->validate([
+                'image' => 'required|mimes:jpeg,png,jpg,gif',
+            ], [
+                'image.required' => __('The image is required'),
+                'image.mimes' => __('The image is required type: jpeg,png,jpg,gif'),
+            ]);
+
             $data = $request->except('_token', 'image');
             $data['image'] = FileUpload::File('images/products', $request->image);
             Product::create($data);

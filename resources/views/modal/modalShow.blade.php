@@ -17,7 +17,7 @@
                 <div class="details">
                     <div class="details-header text-center">
                         <h4 class="title"></h4>
-                        <p class="product-description "></p>
+                        {{-- <p class="product-description "></p> --}}
                     </div>
                     <div class="products">
 

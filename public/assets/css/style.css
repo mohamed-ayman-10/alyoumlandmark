@@ -67,16 +67,16 @@ nav.navbar {
     height: 62px;
 }
 
-.navbar .navbar-collapse button {
+.navbar .navbar-collapse a.order {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px; /* 100% */
     text-transform: uppercase;
-    border-radius: 1000px;
+    border-radius: 1000px !important;
     border: none;
 }
-.navbar .navbar-collapse button:hover {
+.navbar .navbar-collapse a.order:hover {
     background-color: var(--yellow-color);
     color: var(--main-color);
     transition: 0.4s;

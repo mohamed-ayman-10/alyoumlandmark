@@ -4,13 +4,13 @@
     </div>
     <div class="container text-center">
         <h2>@lang('Address')</h2>
-        <p>@lang('121 Administrative Control Buildings Hadayek El Kobba - Cairo')</p>
+        <p>{{ App\Models\Setting::query()->first()->address() }}</p>
         <div class="contact-line bg-light mb-4"></div>
         <h2>@lang('Phone')</h2>
-        <p>02-24511803, 01122022033</p>
+        <p>{{ App\Models\Setting::query()->first()->phone }}</p>
         <div class="contact-line bg-light mb-4"></div>
         <h2>@lang('Email')</h2>
-        <p>info@alyomlandmark.com</p>
+        <p>{{ App\Models\Setting::query()->first()->email }}</p>
         <div class="contact-line bg-light mb-4"></div>
 
         <h2>@lang('BE THE FIRST TO KNOW')</h2>

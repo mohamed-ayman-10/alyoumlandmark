@@ -26,7 +26,6 @@
                             <p class="description ps-5 pe-5 m-0"></p>
                         </div>
                     </div>
-
                 </div>
             </div>
 

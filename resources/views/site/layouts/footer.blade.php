@@ -3,6 +3,9 @@
 {{-- Swiper --}}
 <script src="{{ asset('assets/js/swiper.js') }}"></script>
 <script src="{{ asset('assets/js/jquery-3.7.0.js') }}"></script>
+<!-- JQUERY JS -->
+{{--<script src="{{ asset('assets/js/jquery.min.js') }}"></script>--}}
+
 <script>
     $('#show').on('show.bs.modal', function(e) {
         var button = $(e.relatedTarget);
@@ -56,6 +59,7 @@
         },
     });
 </script>
+
 </body>
 
 </html>

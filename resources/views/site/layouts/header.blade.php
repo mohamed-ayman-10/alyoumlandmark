@@ -19,6 +19,10 @@
     {{-- main style --}}
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 
+    {{--Owl Carousel--}}
+    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/owl.theme.default.min.css')}}">
+
     <title>{{ asset(App\Models\Setting::query()->first()->title()) }}</title>
 </head>
 

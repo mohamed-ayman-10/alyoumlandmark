@@ -27,19 +27,19 @@
                             {{-- @foreach ($products as $product) --}}
                             <div class="swiper-slide rounded">
                                 <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                                    class="images  card-img-top bg-card-color" alt="">
+                                     class="images  card-img-top bg-card-color" alt="">
                             </div>
                             <div class="swiper-slide rounded">
                                 <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                                    class="images card-img-top bg-card-color" alt="">
+                                     class="images card-img-top bg-card-color" alt="">
                             </div>
                             <div class="swiper-slide rounded">
                                 <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                                    class="images card-img-top bg-card-color" alt="">
+                                     class="images card-img-top bg-card-color" alt="">
                             </div>
                             <div class="swiper-slide rounded">
                                 <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                                    class="images card-img-top bg-card-color" alt="">
+                                     class="images card-img-top bg-card-color" alt="">
                             </div>
                             {{-- @endforeach --}}
                         </div>
@@ -52,49 +52,51 @@
 
             <section class="sec3">
                 <div class="container">
-{{--                    <div class="conf">--}}
+                                        <div class="conf">
 
-{{--                        <div class="rounded">--}}
-{{--                            <img src="{{ asset('images/about/image 188.png') }}"--}}
-{{--                                class="images2 card-img-top bg-card-color" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="rounded">--}}
-{{--                            <img src="{{ asset('images/about/image 189.png') }}"--}}
-{{--                                class="images2 card-img-top bg-card-color" alt="">--}}
-{{--                        </div>--}}
-{{--                        <div class="rounded">--}}
-{{--                            <img src="{{ asset('images/about/image 190.png') }}"--}}
-{{--                                class="images2 card-img-top bg-card-color" alt="">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
+                                            <div class="rounded">
+                                                <img src="{{ asset('images/about/image 188.png') }}"
+                                                    class="images2 card-img-top bg-card-color" alt="">
+                                            </div>
+                                            <div class="rounded">
+                                                <img src="{{ asset('images/about/image 189.png') }}"
+                                                    class="images2 card-img-top bg-card-color" alt="">
+                                            </div>
+                                            <div class="rounded">
+                                                <img src="{{ asset('images/about/image 190.png') }}"
+                                                    class="images2 card-img-top bg-card-color" alt="">
+                                            </div>
+                                        </div>
 
-                    <!-- Swiper -->
-                    <div class="swiper mySwiper py-5 xx-3">
-                        <div class="swiper-wrapper pb-5">
-                            {{-- @foreach ($products as $product) --}}
-                            <div class="swiper-slide rounded">
+                    <div class="owl-carousel owl-theme position-relative">
+                        <div class="item">
+                            <div class="rounded">
                                 <img src="{{ asset('images/about/image 188.png') }}"
-                                     class="images  card-img-top bg-card-color" alt="">
+                                     class="images2 card-img-top bg-card-color" alt="">
                             </div>
-                            <div class="swiper-slide rounded">
+                        </div>
+                        <div class="item">
+                            <div class="rounded">
                                 <img src="{{ asset('images/about/image 189.png') }}"
-                                     class="images card-img-top bg-card-color" alt="">
+                                     class="images2 card-img-top bg-card-color" alt="">
                             </div>
-                            <div class="swiper-slide rounded">
+                        </div>
+                        <div class="item">
+                            <div class="rounded">
                                 <img src="{{ asset('images/about/image 190.png') }}"
-                                     class="images card-img-top bg-card-color" alt="">
+                                     class="images2 card-img-top bg-card-color" alt="">
                             </div>
-                            {{-- @endforeach --}}
                         </div>
                     </div>
+
                 </div>
             </section>
         </div>
-
     </div>
 
 </div>
 {{-- Start Contact --}}
+
 @include('site.inc.contact')
 {{-- End Contact --}}
 

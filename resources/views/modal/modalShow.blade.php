@@ -17,11 +17,10 @@
                 <div class="details">
                     <div class="details-header text-center">
                         <h4 class="title"></h4>
-                        {{-- <p class="product-description "></p> --}}
                     </div>
                     <div class="products">
 
-                        <div style="padding:10px 0">
+                        <div>
                             <label for="" class="form-label ps-5 pe-5">@lang('Description')</label>
                             <p class="description ps-5 pe-5 m-0"></p>
                         </div>

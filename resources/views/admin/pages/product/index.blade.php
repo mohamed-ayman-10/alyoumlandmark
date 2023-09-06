@@ -17,7 +17,6 @@
                             <th>#</th>
                             <th>@lang('Title')</th>
                             <th>@lang('Description')</th>
-                            <th>@lang('Image')</th>
                             <th>@lang('Price')</th>
                             <th>@lang('Actions')</th>
                         </tr>
@@ -29,9 +28,6 @@
                                 <td>{{ $product->title() }}</td>
                                 <td>
                                     <p class="text-truncate" style="width:200px">{{ $product->description() }}</p>
-                                </td>
-                                <td>
-                                    <img width="150" height="80" src="{{ asset($product->image) }}" alt="">
                                 </td>
                                 <td>{{ $product->price }}</td>
                                 <td>
@@ -49,7 +45,7 @@
                                     </a>
                                 </td>
                             </tr>
-                            <!-- Update Modal -->
+                            <!-- Delete Modal -->
                             <div class="modal fade" id="delete{{ $product->id }}" tabindex="-1" role="dialog"
                                 aria-labelledby="delete{{ $product->id }}" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-slideup" role="document">
@@ -77,7 +73,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- END Update Modal -->
+                            <!-- END Delete Modal -->
                         @endforeach
                     </tbody>
                 </table>

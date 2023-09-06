@@ -7,7 +7,6 @@
     <div class="container">
         <div class="content">
             <section class="sec1">
-
                 <div class="header">
                     <h4 class="title">@lang('ABOUT US')</h4>
                 </div>
@@ -53,22 +52,41 @@
 
             <section class="sec3">
                 <div class="container">
-                    <div class="conf">
+{{--                    <div class="conf">--}}
 
-                        <div class="rounded">
-                            <img src="{{ asset('images/about/image 188.png') }}"
-                                class="images2 card-img-top bg-card-color" alt="">
-                        </div>
-                        <div class="rounded">
-                            <img src="{{ asset('images/about/image 189.png') }}"
-                                class="images2 card-img-top bg-card-color" alt="">
-                        </div>
-                        <div class="rounded">
-                            <img src="{{ asset('images/about/image 190.png') }}"
-                                class="images2 card-img-top bg-card-color" alt="">
+{{--                        <div class="rounded">--}}
+{{--                            <img src="{{ asset('images/about/image 188.png') }}"--}}
+{{--                                class="images2 card-img-top bg-card-color" alt="">--}}
+{{--                        </div>--}}
+{{--                        <div class="rounded">--}}
+{{--                            <img src="{{ asset('images/about/image 189.png') }}"--}}
+{{--                                class="images2 card-img-top bg-card-color" alt="">--}}
+{{--                        </div>--}}
+{{--                        <div class="rounded">--}}
+{{--                            <img src="{{ asset('images/about/image 190.png') }}"--}}
+{{--                                class="images2 card-img-top bg-card-color" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper py-5 xx-3">
+                        <div class="swiper-wrapper pb-5">
+                            {{-- @foreach ($products as $product) --}}
+                            <div class="swiper-slide rounded">
+                                <img src="{{ asset('images/about/image 188.png') }}"
+                                     class="images  card-img-top bg-card-color" alt="">
+                            </div>
+                            <div class="swiper-slide rounded">
+                                <img src="{{ asset('images/about/image 189.png') }}"
+                                     class="images card-img-top bg-card-color" alt="">
+                            </div>
+                            <div class="swiper-slide rounded">
+                                <img src="{{ asset('images/about/image 190.png') }}"
+                                     class="images card-img-top bg-card-color" alt="">
+                            </div>
+                            {{-- @endforeach --}}
                         </div>
                     </div>
-
                 </div>
             </section>
         </div>

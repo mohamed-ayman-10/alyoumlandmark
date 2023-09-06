@@ -36,4 +36,8 @@ class Product extends Model
             return $this->product_details_en;
         }
     }
+
+    public function images() {
+        return $this->hasMany(Image::class);
+    }
 }

@@ -328,7 +328,7 @@ footer p {
 /* Start About Page */
 
 .about {
-    background-image: url("../../images/happy-family-with-child\ 1.png");
+    background-image: url("../../images/about/WhatsApp Image 2023-09-03 at 8.23.27 PM.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -441,9 +441,9 @@ footer p {
 
 /* Start Our Menu */
 .menu {
-    background-image: url("../../images/family-shopping-with-face-mask\ 1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("../../images/about/WhatsApp Image 2023-09-03 at 8.29.52 PM.jpeg") center center/cover;
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
     position: relative;
 }
 

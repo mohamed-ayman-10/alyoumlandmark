@@ -6,17 +6,6 @@
                 <div class="card-header {{ app()->getLocale() == 'ar' ? 'text-right' : '' }}">
                     <h4 class="m-0"> @lang('Create product')</h4>
                 </div>
-
-                {{-- @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif --}}
-
                 <div class="card-body">
                     <form action="{{ route('admin.product.store') }}" method="post" enctype="multipart/form-data">
                         @csrf
@@ -66,29 +55,9 @@
                             </div>
                             <div class="col-12">
                                 <div class="mb-3">
-                                    <label for="" class="form-label">@lang('Product Details Ar')</label>
-                                    <textarea class="form-control @error('product_details') is-invalid @enderror" name="product_details_ar" id=""
-                                        rows="5" placeholder="{{ __('Product Details Ar') }}">{{ old('product_details_ar') }}</textarea>
-                                    @error('description_en')
-                                        <div class="text-danger">{{ $message }}</div>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="" class="form-label">@lang('Product Details En')</label>
-                                    <textarea class="form-control @error('product_details_en') is-invalid @enderror" name="product_details_en" id=""
-                                        rows="5" placeholder="{{ __('Product Details En') }}">{{ old('product_details_en') }}</textarea>
-                                    @error('description_en')
-                                        <div class="text-danger">{{ $message }}</div>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-3">
                                     <label for="" class="form-label">@lang('Choose image')</label>
-                                    <input type="file" class="form-control-file  @error('image') is-invalid @enderror"
-                                        name="image" id="image" aria-describedby="fileHelpId">
+                                    <input type="file" accept="image/*" required multiple class="form-control-file  @error('image') is-invalid @enderror"
+                                        name="images[]" id="image" aria-describedby="fileHelpId">
                                     @error('image')
                                         <div class="text-danger">{{ $message }}</div>
                                     @enderror

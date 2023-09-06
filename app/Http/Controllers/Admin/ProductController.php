@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductRequest;
 use App\Models\Contact;
+use App\Models\Image;
 use App\Models\Product;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
@@ -28,15 +29,25 @@ class ProductController extends Controller
         try {
 
             $request->validate([
-                'image' => 'required|mimes:jpeg,png,jpg,gif',
+                'images' => 'required',
             ], [
-                'image.required' => __('The image is required'),
-                'image.mimes' => __('The image is required type: jpeg,png,jpg,gif'),
+                'images.required' => __('The image is required'),
             ]);
 
-            $data = $request->except('_token', 'image');
-            $data['image'] = FileUpload::File('images/products', $request->image);
-            Product::create($data);
+//            return $request;
+            $data = $request->except('_token', 'images');
+//            return $data;
+            $product = Product::create($data);
+
+            if ($request->hasFile('images')) {
+                foreach ($request->images as $image) {
+                    $img = new Image();
+                    $img->product_id = $product->id;
+                    $img->path = FileUpload::File('images/products', $image);
+                    $img->save();
+                }
+            }
+
             return redirect()->route('admin.product')->with('success', __('Create Successfully'));
         } catch (\Exception $ex) {
             return redirect()->back()->withErrors(['error' => $ex->getMessage()]);
@@ -60,11 +71,7 @@ class ProductController extends Controller
         try {
 
             $product = Product::query()->findOrFail($id);
-            $data = $request->except('_token', 'image');
-            if ($request->hasFile('image')) {
-                FileUpload::Delete($product->image);
-                $data['image'] = FileUpload::File('images/products', $request->image);
-            }
+            $data = $request->except('_token');
 
             $product->update($data);
             return redirect()->route('admin.product')->with('success', __('Update Successfully'));

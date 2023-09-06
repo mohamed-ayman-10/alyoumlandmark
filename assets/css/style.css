@@ -465,14 +465,14 @@ footer p {
     margin: 50px 0;
 }
 
-.menu-text a {
+.menu-text button {
     padding: 12px 24px;
     flex-shrink: 0;
     height: 101.396px;
     width: 100%;
 }
 
-.menu-text a p {
+.menu-text button p {
     border-radius: 40px;
     border: 3px solid #f4f3e7;
     background: rgba(149, 140, 123, 0.7);

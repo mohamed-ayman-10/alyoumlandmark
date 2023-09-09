@@ -36,10 +36,10 @@
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header product-modal">
+                <div class="modal-header bg-card-color">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0 product-modal" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+                <div class="modal-body p-0 bg-card-color " dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
                     <div class="text-center mb-3 px-3">
                         <div class="row">
                             @foreach ($product->images as $image)
@@ -51,9 +51,9 @@
                             @endforeach
                         </div>
                     </div>
-                    <div class="details pb-5">
+                    <div class="details pb-5 bg-card-color text-light">
                         <div class="details-header text-center">
-                            <h4 class="title">{{ $product->title() }}</h4>
+                            <h4 class="title  text-light">{{ $product->title() }}</h4>
                         </div>
                         <div>
                             <label for="" class="form-label ps-5 pe-5">@lang('Description')</label>

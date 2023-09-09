@@ -29,19 +29,19 @@
                     {{-- @foreach ($products as $product) --}}
                     <div class="swiper-slide rounded">
                         <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                            class="images  card-img-top bg-card-color" alt="">
+                            class="images  card-img-top bg-card-color w-100" alt="">
                     </div>
                     <div class="swiper-slide rounded">
                         <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                            class="images card-img-top bg-card-color" alt="">
+                            class="images card-img-top bg-card-color w-100" alt="">
                     </div>
                     <div class="swiper-slide rounded">
                         <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                            class="images card-img-top bg-card-color" alt="">
+                            class="images card-img-top bg-card-color w-100" alt="">
                     </div>
                     <div class="swiper-slide rounded">
                         <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                            class="images card-img-top bg-card-color" alt="">
+                            class="images card-img-top bg-card-color w-100" alt="">
                     </div>
                     {{-- @endforeach --}}
                 </div>
@@ -56,15 +56,15 @@
         <div class="container">
             <div class="conf">
 
-                <div class="rounded">
+                <div class="rounded mx-auto mx-md-0">
                     <img src="{{ asset('images/about/image 188.png') }}" class="images2 card-img-top bg-card-color"
                         alt="">
                 </div>
-                <div class="rounded">
+                <div class="rounded mx-auto mx-md-0">
                     <img src="{{ asset('images/about/image 189.png') }}" class="images2 card-img-top bg-card-color"
                         alt="">
                 </div>
-                <div class="rounded">
+                <div class="rounded mx-auto mx-md-0">
                     <img src="{{ asset('images/about/image 190.png') }}" class="images2 card-img-top bg-card-color"
                         alt="">
                 </div>
@@ -72,19 +72,19 @@
 
             <div class="owl-carousel owl-theme position-relative">
                 <div class="item">
-                    <div class="rounded">
+                    <div class="rounded mx-auto mx-md-0">
                         <img src="{{ asset('images/about/image 188.png') }}" class="images2 card-img-top bg-card-color"
                             alt="">
                     </div>
                 </div>
                 <div class="item">
-                    <div class="rounded">
+                    <div class="rounded mx-auto mx-md-0">
                         <img src="{{ asset('images/about/image 189.png') }}" class="images2 card-img-top bg-card-color"
                             alt="">
                     </div>
                 </div>
                 <div class="item">
-                    <div class="rounded">
+                    <div class="rounded mx-auto mx-md-0">
                         <img src="{{ asset('images/about/image 190.png') }}" class="images2 card-img-top bg-card-color"
                             alt="">
                     </div>

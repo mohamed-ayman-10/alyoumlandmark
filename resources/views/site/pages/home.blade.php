@@ -1,12 +1,13 @@
 @include('site.layouts.header')
 @include('site.inc.nav')
 {{-- Start Banner --}}
-<section class="banner py-5 position-relative" style="background-image: url({{ asset('images/banner.png') }})">
+<section class="banner py-5 position-relative"
+    style="background-image: url('{{ asset('images/about/WhatsApp Image 2023-09-03 at 8.29.52 PM.jpeg') }}')">
     {{-- <img class="banner-img" src="{{ asset('images/banner.png') }}" alt=""> --}}
     <div class="container">
         <div class="content px-5 text-light" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
             <h2 class="mb-4 ">@lang('Who We Are?')</h2>
-            <p class="">@lang('Alyoum Land Mark company is an Egyptian company specialized in production , packaging , trading and eporting of frozen Vegetables, Fruits and French fries potatoes. Alyoum Land Mark company mission is to seek about qualified material. Our aim is to introduce safe and highly qualified final product with distinguished delicious taste. We consider our consumer as a main member of our Family so we keen carefully to taste him a very pleasant product.')</p>
+            <p class="fw-bold">@lang('Alyoum Land Mark company is an Egyptian company specialized in production , packaging , trading and eporting of frozen Vegetables, Fruits and French fries potatoes. Alyoum Land Mark company mission is to seek about qualified material. Our aim is to introduce safe and highly qualified final product with distinguished delicious taste. We consider our consumer as a main member of our Family so we keen carefully to taste him a very pleasant product.')</p>
         </div>
     </div>
 </section>
@@ -160,4 +161,35 @@
 {{-- Start Footer --}}
 @include('site.inc.footer')
 {{-- End Footer --}}
+
+{{-- <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script> --}}
 @include('site.layouts.footer')

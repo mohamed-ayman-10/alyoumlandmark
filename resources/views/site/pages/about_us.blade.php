@@ -18,80 +18,47 @@
     </div>
 </div>
 <div class="bg-card-color py-5">
-    <section class="sec2">
+    {{-- <section class="sec2">
         <div class="container">
             <div class="head">
                 <h3 class="main-title">@lang('certificates')</h3>
             </div>
-            <!-- Swiper -->
-            <div class="swiper mySwiper py-5 xx-3">
-                <div class="swiper-wrapper pb-5">
-                    {{-- @foreach ($products as $product) --}}
-                    <div class="swiper-slide rounded">
-                        <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                            class="images  card-img-top bg-card-color w-100" alt="">
-                    </div>
-                    <div class="swiper-slide rounded">
-                        <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                            class="images card-img-top bg-card-color w-100" alt="">
-                    </div>
-                    <div class="swiper-slide rounded">
-                        <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                            class="images card-img-top bg-card-color w-100" alt="">
-                    </div>
-                    <div class="swiper-slide rounded">
-                        <img src="{{ asset('images/about/Rectangle 6452.png') }}"
-                            class="images card-img-top bg-card-color w-100" alt="">
-                    </div>
-                    {{-- @endforeach --}}
+            <div class="conf py-5">
+                <div class="rounded mx-auto">
+                    <img src="{{ asset('images/about/Rectangle 6452.png') }}" class="images2 card-img-top bg-card-color"
+                        alt="">
                 </div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
 
-    </section>
+    </section> --}}
 
     <section class="sec3">
         <div class="container">
-            <div class="conf">
+            {{-- <div class="conf"> --}}
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper pb-5">
+                    <div class="swiper-slide text-center">
+                        <img src="{{ asset('images/about/image 188.png') }}" class="bg-card-color" alt=""
+                            width="349" height="453">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="{{ asset('images/about/image 189.png') }}" class="bg-card-color" alt=""
+                            width="349" height="453">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="{{ asset('images/about/image 190.png') }}" class="bg-card-color" alt=""
+                            width="349" height="453">
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <img src="{{ asset('images/about/Rectangle 6452.png') }}" class="bg-card-color" alt=""
+                            width="349" height="453">
+                    </div>
+                </div>
 
-                <div class="rounded mx-auto mx-md-0">
-                    <img src="{{ asset('images/about/image 188.png') }}" class="images2 card-img-top bg-card-color"
-                        alt="">
-                </div>
-                <div class="rounded mx-auto mx-md-0">
-                    <img src="{{ asset('images/about/image 189.png') }}" class="images2 card-img-top bg-card-color"
-                        alt="">
-                </div>
-                <div class="rounded mx-auto mx-md-0">
-                    <img src="{{ asset('images/about/image 190.png') }}" class="images2 card-img-top bg-card-color"
-                        alt="">
-                </div>
             </div>
-
-            <div class="owl-carousel owl-theme position-relative">
-                <div class="item">
-                    <div class="rounded mx-auto mx-md-0">
-                        <img src="{{ asset('images/about/image 188.png') }}" class="images2 card-img-top bg-card-color"
-                            alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="rounded mx-auto mx-md-0">
-                        <img src="{{ asset('images/about/image 189.png') }}" class="images2 card-img-top bg-card-color"
-                            alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="rounded mx-auto mx-md-0">
-                        <img src="{{ asset('images/about/image 190.png') }}" class="images2 card-img-top bg-card-color"
-                            alt="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
     </section>
 </div>
 {{-- Start Contact --}}

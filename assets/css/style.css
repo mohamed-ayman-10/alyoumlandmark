@@ -149,10 +149,10 @@ nav.navbar {
 }
 
 .banner .content p {
-    font-size: 20px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 23px; /* 115% */
+    line-height: 29px; /* 115% */
     text-transform: uppercase;
 }
 /* End Banner */
@@ -196,7 +196,7 @@ nav.navbar {
     overflow: auto;
 }
 .product .swiper .swiper-slide .card .card-body p::-webkit-scrollbar {
-    width: 0px;
+    /* width: 0px; */
 }
 
 .product .swiper .swiper-slide .card .card-body a {
@@ -725,3 +725,7 @@ ol .pra a {
 .modal-header .btn-close {
     background-color: #fff;
 }
+
+/* .swiper-backface-hidden .swiper-slide {
+    width: 1px !important;
+} */

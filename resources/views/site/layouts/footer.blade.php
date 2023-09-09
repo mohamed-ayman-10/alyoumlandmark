@@ -4,9 +4,9 @@
 <script src="{{ asset('assets/js/swiper.js') }}"></script>
 <script src="{{ asset('assets/js/jquery-3.7.0.js') }}"></script>
 <!-- JQUERY JS -->
-{{--<script src="{{ asset('assets/js/jquery.min.js') }}"></script>--}}
+{{-- <script src="{{ asset('assets/js/jquery.min.js') }}"></script> --}}
 
-<script>
+{{-- <script>
     $('#show').on('show.bs.modal', function(e) {
         var button = $(e.relatedTarget);
         var title = button.data('title');
@@ -20,13 +20,13 @@
         modal.find('.modal-body .description').html(description);
         modal.find('.modal-body .product-description').html(product_details)
     });
-</script>
+</script> --}}
 
-<script>
+{{-- <script>
     $('.close-alert').on('click', function() {
         $('.close-alert').parent().remove();
     });
-</script>
+</script> --}}
 
 
 <script>

@@ -17,7 +17,7 @@
                             <button type="button" class="pra border-0 bg-transparent" type="button"
                                 data-bs-toggle="modal" data-bs-target="#exampleModal{{ $product->id }}"
                                 style="color: black;text-decoration: none">
-                                <p class="" style="padding: 17px">{{ $product->title() }}</p>
+                                <p class="" style="padding: 17px !important">{{ $product->title() }}</p>
                             </button>
                         @endforeach
                     </div>

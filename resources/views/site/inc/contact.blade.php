@@ -19,9 +19,9 @@
         <h2 class="pb-3">@lang('Subscribe')</h2>
         <form action="#" method="post">
             <div class="input-group mb-3">
-                <input type="text" class="form-control bg-card-color p-4 rounded-start-pill"
+                <input type="text" class="form-control bg-card-color1 p-4 rounded-start-pill"
                     placeholder="Enter Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn2 border-0 bg-card-color rounded-end-pill px-4" type="button" id="button-addon2">
+                <button class="btn2 border-0 bg-card-color1 rounded-end-pill px-4" type="button" id="button-addon2">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                         <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path

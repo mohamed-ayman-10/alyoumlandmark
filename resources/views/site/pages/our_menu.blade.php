@@ -14,8 +14,8 @@
                     <p class="pra zxc">@lang('alyoum land mark products are:')</p>
                     <div class="menu-text">
                         @foreach ($products as $product)
-                            <button type="button" class="pra border-0 bg-transparent" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal{{$product->id}}"
+                            <button type="button" class="pra border-0 bg-transparent" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal{{ $product->id }}"
                                 style="color: black;text-decoration: none">
                                 <p>{{ $product->title() }}</p>
                             </button>
@@ -32,8 +32,8 @@
 </div>
 @foreach ($products as $product)
     <!-- Modal -->
-    <div class="modal fade modal-lg" id="exampleModal{{$product->id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
+    <div class="modal fade modal-xl" id="exampleModal{{ $product->id }}" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header product-modal">
@@ -42,10 +42,10 @@
                 <div class="modal-body p-0 product-modal" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
                     <div class="text-center mb-3 px-3">
                         <div class="row">
-                            @foreach($product->images as $image)
-                                <div class="col-md-6 mb-4">
+                            @foreach ($product->images as $image)
+                                <div class="col-md-4 mb-4">
                                     <div class="">
-                                        <img src="{{asset($image->path)}}" class="w-100 h-100" alt="">
+                                        <img src="{{ asset($image->path) }}" class="w-100 h-100" alt="">
                                     </div>
                                 </div>
                             @endforeach
@@ -53,11 +53,11 @@
                     </div>
                     <div class="details pb-5">
                         <div class="details-header text-center">
-                            <h4 class="title">{{$product->title()}}</h4>
+                            <h4 class="title">{{ $product->title() }}</h4>
                         </div>
                         <div>
                             <label for="" class="form-label ps-5 pe-5">@lang('Description')</label>
-                            <p class="description ps-5 pe-5 m-0">{{$product->description()}}</p>
+                            <p class="description ps-5 pe-5 m-0">{{ $product->description() }}</p>
                         </div>
                     </div>
                 </div>

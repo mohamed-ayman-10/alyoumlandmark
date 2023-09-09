@@ -1,9 +1,9 @@
 :root {
     --main-color: #00473c;
     --yellow-color: #e6ff55;
-    --white-color: #f4f3e7;
+    --white-color: #1f5605;
     --green-color: #a9c1a9;
-    --card-color: #e8dcc6;
+    --card-color: #1f5605;
 }
 
 * {
@@ -387,7 +387,7 @@ footer p {
 .sec2 .container .head {
     padding: 20px 0;
     text-align: center;
-    border-top: 1px solid white;
+    /* border-top: 1px solid white; */
     border-bottom: 1px solid white;
 }
 .sec2 .container .head .main-title {
@@ -658,10 +658,10 @@ ol .pra a {
 .product-content img {
     max-width: 100%;
 }
-.details {
+/* .details {
     background-color: #f4f3e7;
     max-height: 900px !important;
-}
+} */
 
 .details-header {
     padding: 50px 0;
@@ -720,4 +720,8 @@ ol .pra a {
 .modal-backdrop.show {
     opacity: 0 !important;
     display: none !important;
+}
+
+.modal-header .btn-close {
+    background-color: #fff;
 }

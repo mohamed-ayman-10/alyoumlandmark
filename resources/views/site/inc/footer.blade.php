@@ -1,6 +1,6 @@
 <footer class="py-5 bg-card-color">
     <div class="container">
-        <div class="row">
+        <div class="row text-light">
             <div class="col-md-3 mb-5 mb-md-0">
                 <div class="content text-center">
                     <h4>@lang('Follow us')</h4>

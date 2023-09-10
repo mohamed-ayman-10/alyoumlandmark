@@ -33,8 +33,11 @@
 
     </section> --}}
 
-    <section class="sec3">
+    <section class="sec2">
         <div class="container">
+            <div class="head mb-5 text-light">
+                <h3 class="main-title">@lang('certificates')</h3>
+            </div>
             {{-- <div class="conf"> --}}
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper pb-5">
